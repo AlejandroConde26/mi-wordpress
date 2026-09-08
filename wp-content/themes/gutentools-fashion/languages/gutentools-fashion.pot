@@ -1,0 +1,219 @@
+# Copyright (C) 2026 gutentools-fashion
+# This file is distributed under the same license as the gutentools-fashion package.
+msgid ""
+msgstr ""
+"Project-Id-Version: gutentools-fashion\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-12 06:30+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../functions.php:27
+msgid "Gutentools Fashion"
+msgstr ""
+
+#: ../patterns/404.php:14
+msgid "404: Page Not Disco-vered"
+msgstr ""
+
+#: ../patterns/404.php:18
+msgid "Looks like the dance floor is empty here! This page has done a disappearing act. Head back to the main stage by clicking the navigation links, and let's keep the party going!"
+msgstr ""
+
+#: ../patterns/404.php:25
+msgid "Go to home page"
+msgstr ""
+
+#: ../patterns/about-two.php:23
+msgid "Our Journey Toward Excellence and Innovation"
+msgstr ""
+
+#: ../patterns/about-two.php:27, ../patterns/about-two.php:75
+msgid "Lorem proin parturient letius curae erat augue posuere fermentum. Malesuada parturient litora orci fermentum a. Quis aliquam ultrices auctor adipiscing malesuada commodo"
+msgstr ""
+
+#: ../patterns/about-two.php:36, ../patterns/about-two.php:84
+msgid "Molestie lorem nam purus eget ultrices."
+msgstr ""
+
+#: ../patterns/about-two.php:46, ../patterns/about-two.php:94
+msgid "Tempus ligula rhoncus placerat ut."
+msgstr ""
+
+#: ../patterns/about-two.php:56, ../patterns/about-two.php:104
+msgid "Fermentum vel enim imperdiet senectus."
+msgstr ""
+
+#: ../patterns/about-two.php:62, ../patterns/about-two.php:110, ../patterns/about-us.php:56
+msgid "learn more"
+msgstr ""
+
+#: ../patterns/about-two.php:71
+msgid "Get to Know Us and What Makes Us Unique"
+msgstr ""
+
+#: ../patterns/about-us.php:14
+msgid "Discover who we are, innovation at heart"
+msgstr ""
+
+#: ../patterns/about-us.php:18, ../patterns/testimonials.php:18
+msgid "Cras dictum id pharetra suspendisse adipiscing semper mi ipsum amet ante nibh velit cursus imperdiet mus suscipit felis ultricies consectetuer Maximus finibus lorem tempor litora molestie nullam fames etiam donec feugiat himenaeos netus convallis"
+msgstr ""
+
+#: ../patterns/about-us.php:26
+msgid "300+"
+msgstr ""
+
+#: ../patterns/about-us.php:30
+msgid "Data Transfered Monthly"
+msgstr ""
+
+#: ../patterns/about-us.php:36
+msgid "15+"
+msgstr ""
+
+#: ../patterns/about-us.php:40
+msgid "Years Of Experience"
+msgstr ""
+
+#: ../patterns/about-us.php:46
+msgid "250+"
+msgstr ""
+
+#: ../patterns/about-us.php:50
+msgid "Digital Projects Completed"
+msgstr ""
+
+#: ../patterns/archive-product.php:55
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: ../patterns/archive.php:43, ../patterns/blog-left.php:47, ../patterns/blog-right.php:44, ../patterns/post.php:46, ../patterns/search.php:44
+msgid "No posts found"
+msgstr ""
+
+#: ../patterns/banner.php:14
+msgid "Innovative Solutions For Your Brands"
+msgstr ""
+
+#: ../patterns/banner.php:18
+msgid "Felis ridiculus viverra phasellus dictum curae vitae purus dictumst eu imperdiet iaculis fringilla sapien ultricies aptent velit diam ultrices eget conubia turpis sociosqu convallis mattis si quam fusce ipsum natoque"
+msgstr ""
+
+#: ../patterns/cart.php:18
+msgid "You may be interested in…"
+msgstr ""
+
+#: ../patterns/cart.php:76
+msgid "Your cart is currently empty!"
+msgstr ""
+
+#: ../patterns/cart.php:84
+msgid "New in store"
+msgstr ""
+
+#: ../patterns/footer.php:19
+msgid "Home"
+msgstr ""
+
+#: ../patterns/footer.php:23
+msgid "About"
+msgstr ""
+
+#: ../patterns/footer.php:27, ../patterns/post.php:10
+msgid "Blog"
+msgstr ""
+
+#: ../patterns/footer.php:31
+msgid "Services"
+msgstr ""
+
+#: ../patterns/footer.php:35
+msgid "Contact"
+msgstr ""
+
+#: ../patterns/footer.php:53
+msgid "Fringilla vehicula malesuada himenaeos lacinia id dictumst suscipit lobortis morbi tristique vitae pharetra magna tincidunt scelerisque elit et phasellus enim commodo finibus"
+msgstr ""
+
+#: ../patterns/footer.php:60
+msgid "gutentools-fashion Developed By"
+msgstr ""
+
+#: ../patterns/footer.php:60
+msgid "Themegrove.com"
+msgstr ""
+
+#: ../patterns/header.php:20
+msgid "Get Started"
+msgstr ""
+
+#: ../patterns/latest-posts.php:14
+msgid "Our Latest Blog for Branding"
+msgstr ""
+
+#: ../patterns/latest-posts.php:14, ../patterns/services.php:66
+msgid "Marketing"
+msgstr ""
+
+#: ../patterns/latest-posts.php:19
+msgid "See All Post"
+msgstr ""
+
+#: ../patterns/services.php:24
+msgid "Tailored Services, designed especially for you."
+msgstr ""
+
+#: ../patterns/services.php:34
+msgid "Branding"
+msgstr ""
+
+#: ../patterns/services.php:38, ../patterns/services.php:54, ../patterns/services.php:70
+msgid "Cursus molestie habitasse nec lectus gravida nulla dignissim luctus praesent convallis mus torquent"
+msgstr ""
+
+#: ../patterns/services.php:50
+msgid "Packaging"
+msgstr ""
+
+#: ../patterns/services.php:77
+msgid "See All Work"
+msgstr ""
+
+#: ../patterns/sidebar.php:15
+msgid "Latest Posts"
+msgstr ""
+
+#: ../patterns/sidebar.php:23
+msgid "Categories"
+msgstr ""
+
+#: ../patterns/sidebar.php:31
+msgid "Tags"
+msgstr ""
+
+#: ../patterns/single-product.php:57
+msgid "Related Products"
+msgstr ""
+
+#: ../patterns/testimonials.php:14
+msgid "See What People Are Saying"
+msgstr ""
+
+#: ../patterns/testimonials.php:34, ../patterns/testimonials.php:60, ../patterns/testimonials.php:86
+msgid "Consectetuer aenean pede libero natoque penatibus ridiculus dui tempus purus magna viverra vel parturient Mi libero cubilia sodales duis cursus"
+msgstr ""
+
+#: ../patterns/testimonials.php:39, ../patterns/testimonials.php:65, ../patterns/testimonials.php:91
+msgid "Sarah Doe"
+msgstr ""
+
+#: ../patterns/testimonials.php:43, ../patterns/testimonials.php:69, ../patterns/testimonials.php:95
+msgid "Manager"
+msgstr ""

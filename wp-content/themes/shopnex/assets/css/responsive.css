@@ -1,0 +1,516 @@
+/* ── Responsive Styles ── */
+
+/* ── Large Screens ── */
+@media (max-width: 1024px) {
+    .mega-menu-inner {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .section-title-lg {
+        font-size: 28px;
+    }
+
+    .newsletter-title {
+        font-size: 36px;
+    }
+
+    .footer-grid {
+        gap: 24px;
+    }
+
+    .footer-brand-desc,
+    .footer-description {
+        max-width: 100%;
+    }
+}
+
+/* ── Tablet ── */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-section {
+        height: 65vh;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 24px;
+        font-size: 13px;
+    }
+
+    .flash-sale-inner {
+        padding: 20px;
+    }
+
+    .flash-sale-title {
+        font-size: 18px;
+    }
+
+    .countdown-number {
+        font-size: 16px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 13px;
+    }
+
+    .product-price {
+        font-size: 13px;
+    }
+
+    .section-title-lg {
+        font-size: 24px;
+    }
+
+    .trending-header {
+        margin-bottom: 24px;
+    }
+
+    .blog-hero-title {
+        font-size: 28px;
+    }
+
+    .blog-hero-desc {
+        font-size: 14px;
+    }
+
+    .single-post-title {
+        font-size: 28px;
+    }
+
+    .entry-content h2 {
+        font-size: 22px;
+    }
+
+    .entry-content h3 {
+        font-size: 18px;
+    }
+
+    .post-navigation {
+        grid-template-columns: 1fr;
+    }
+
+    .post-nav-link.next {
+        text-align: left;
+    }
+
+    .features-grid {
+        gap: 20px;
+    }
+
+    .feature-title {
+        font-size: 13px;
+    }
+
+    .newsletter-title {
+        font-size: 28px;
+    }
+
+    .newsletter-desc {
+        font-size: 14px;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-text {
+        font-size: 13px;
+    }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-label {
+        font-size: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .announcement-item {
+        margin: 0 16px;
+        font-size: 11px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .section-title-lg {
+        font-size: 22px;
+    }
+
+    .section-label {
+        font-size: 9px;
+    }
+
+    .blog-hero-section {
+        padding: 32px 0 24px;
+    }
+
+    .blog-hero-title {
+        font-size: 24px;
+    }
+
+    .topic-tab {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .post-card-body {
+        padding: 16px;
+    }
+
+    .post-card-title {
+        font-size: 16px;
+    }
+
+    .post-card-excerpt {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
+
+    .flash-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .products-grid {
+        gap: 10px;
+    }
+
+    .filter-chip {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .newsletter-section {
+        padding: 40px 0;
+    }
+
+    .newsletter-title {
+        font-size: 24px;
+    }
+
+    .newsletter-desc {
+        font-size: 14px;
+    }
+
+    .newsletter-input {
+        padding: 14px 20px;
+        font-size: 13px;
+    }
+
+    .newsletter-btn {
+        padding: 14px 24px;
+        font-size: 13px;
+    }
+
+    .site-footer {
+        padding: 40px 0 24px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-brand-col {
+        grid-column: span 1;
+    }
+
+    .footer-bottom {
+        gap: 12px;
+    }
+
+    .footer-payments {
+        font-size: 10px;
+    }
+
+    .drawer.right {
+        max-width: 100%;
+    }
+
+    .drawer.left {
+        max-width: 85%;
+    }
+
+    .search-overlay-inner {
+        padding-top: 60px;
+    }
+
+    .search-field-wrapper {
+        padding: 12px 14px;
+    }
+
+    .search-input-wrapper .search-field {
+        font-size: 15px;
+    }
+
+    .search-input-wrapper .search-submit {
+        width: 44px;
+        height: 44px;
+    }
+
+    .search-tag {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .brand-marquee-content {
+        gap: 40px;
+    }
+
+    .new-arrival-card {
+        width: 200px;
+    }
+
+    .single-post-title {
+        font-size: 24px;
+    }
+
+    .single-post-meta {
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .entry-content p {
+        font-size: 15px;
+    }
+
+    .comment-form input[type="text"],
+    .comment-form input[type="email"],
+    .comment-form textarea {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}
+
+/* ── Toast Container Responsive ── */
+.toast-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .toast-container {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+/* Toast Styles */
+.toast {
+    background: var(--brand-dark);
+    color: #fff;
+    padding: 16px 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 320px;
+    max-width: 420px;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: toastSlideIn 0.4s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    position: relative;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.toast::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #22c55e;
+}
+
+.toast.error::before {
+    background: #ef4444;
+}
+
+.toast-icon {
+    color: #22c55e;
+    flex-shrink: 0;
+}
+
+.toast.error .toast-icon {
+    color: #ef4444;
+}
+
+.toast-message {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.toast-close {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.toast-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.toast.removing {
+    animation: toastSlideOut 0.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes toastSlideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+@media (max-width: 768px) {
+    .toast {
+        min-width: auto;
+        max-width: 100%;
+        padding: 14px 16px;
+    }
+
+    .toast-message {
+        font-size: 13px;
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Print Styles ── */
+@media print {
+    .site-header,
+    .announcement-bar,
+    .site-footer,
+    .blog-sidebar,
+    .blog-pagination,
+    .post-navigation,
+    .comments-section {
+        display: none !important;
+    }
+
+    .blog-layout {
+        grid-template-columns: 1fr !important;
+    }
+
+    .post-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

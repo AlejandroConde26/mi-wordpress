@@ -1,0 +1,40 @@
+.shopnex-rating-notice {
+	padding: 0 15px;
+}
+
+.shopnex-rating-notice-logo {
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.shopnex-rating-notice-logo img {
+	max-width: 100%;
+}
+
+.shopnex-rating-notice h3 {
+	margin-bottom: 0;
+}
+
+.shopnex-rating-notice p {
+	margin-top: 3px;
+	margin-bottom: 15px;
+}
+
+.shopnex-already-rated,
+.shopnex-maybe-later {
+	text-decoration: none;
+	margin-left: 12px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.shopnex-already-rated .dashicons,
+.shopnex-maybe-later .dashicons {
+	vertical-align: sub;
+}
+
+.shopnex-logo {
+	height: 100%;
+	width: auto;
+}

@@ -1,0 +1,1733 @@
+/* ── Product Single Page Styles ── */
+
+/* ── Container ── */
+.shopnex-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* ── Breadcrumbs ── */
+.shopnex-breadcrumb {
+    padding: 24px 0 16px;
+}
+
+.shopnex-breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-size: 12px;
+    color: var(--brand-muted, #9C9792);
+    flex-wrap: wrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.shopnex-breadcrumb-link {
+    color: var(--brand-muted, #9C9792);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.shopnex-breadcrumb-link:hover {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-breadcrumb-sep {
+    display: inline;
+    margin: 0 8px;
+    opacity: 0.5;
+    color: var(--brand-muted, #9C9792);
+}
+
+.shopnex-breadcrumb-current {
+    color: var(--brand-muted, #9C9792);
+    font-weight: 400;
+}
+
+
+/* ── Main Product Section ── */
+.shopnex-pdp-main {
+    background: var(--bg-primary, #FBF9F6);
+}
+
+.shopnex-pdp-container {
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+
+.shopnex-pdp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* ── Image Gallery ── */
+.shopnex-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Thumbnails */
+.shopnex-gallery-thumbs {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 4px;
+}
+
+.shopnex-gallery-thumbs::-webkit-scrollbar {
+    display: none;
+}
+
+.shopnex-thumb-btn {
+    flex-shrink: 0;
+    width: 80px;
+    height: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+    background: var(--bg-secondary, #F3EFEA);
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shopnex-thumb-btn:hover {
+    opacity: 0.9;
+}
+
+.shopnex-thumb-btn.active {
+    border-color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-thumb-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Image */
+.shopnex-gallery-main {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--bg-secondary, #F3EFEA);
+    aspect-ratio: 3 / 4;
+    cursor: zoom-in;
+}
+
+.shopnex-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+/* Product Badge */
+.shopnex-pdp-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+
+.shopnex-badge-bestseller {
+    background: var(--accent, #B8977E);
+    color: #fff;
+}
+
+.shopnex-badge-sale {
+    background: var(--brand-secondary, #C4614E);
+    color: #fff;
+}
+
+.shopnex-badge-new {
+    background: var(--brand-highlight, #FBE7C6);
+    color: var(--brand-dark, #1C1C1C);
+}
+
+
+/* ── Product Info ── */
+.shopnex-pdp-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product Tag */
+.shopnex-pdp-tag {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent, #B8977E);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.shopnex-pdp-brand {
+    font-size: 11px;
+    color: var(--brand-muted, #9C9792);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.shopnex-pdp-title {
+    font-family: var(--font-display, 'Playfair Display', serif);
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: var(--brand-dark, #1C1C1C);
+}
+
+
+/* ── Rating ── */
+.shopnex-pdp-rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.shopnex-rating-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.shopnex-star-filled {
+    color: var(--accent, #B8977E);
+    font-size: 16px;
+}
+
+.shopnex-star-filled svg {
+    fill: var(--accent, #B8977E);
+}
+
+.shopnex-star-empty {
+    color: #e5e7eb;
+    font-size: 16px;
+}
+
+.shopnex-star-icon {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.shopnex-star-icon svg {
+    display: block;
+}
+
+.shopnex-rating-link {
+    font-size: 14px;
+    color: var(--brand-muted, #9C9792);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.shopnex-rating-link:hover {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+
+/* ── Price Block ── */
+.shopnex-pdp-price-block {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.shopnex-price-current {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+    letter-spacing: -0.01em;
+}
+
+.shopnex-price-current ins {
+    text-decoration: none;
+}
+
+.shopnex-price-current .woocommerce-Price-amount {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-price-original {
+    font-size: 17px;
+    color: var(--brand-muted, #9C9792);
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.shopnex-price-save {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-secondary, #C4614E);
+}
+
+
+/* ── Description ── */
+.shopnex-pdp-desc {
+    font-size: 15px;
+    color: var(--text-secondary, #6B6560);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 440px;
+}
+
+
+/* ── Option Groups (Color / Size) ── */
+.shopnex-option-group {
+    margin-bottom: 24px;
+}
+
+.shopnex-option-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--brand-muted, #9C9792);
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shopnex-option-value {
+    font-weight: 400;
+    color: var(--brand-muted, #9C9792);
+}
+
+/* ── Swatch Tooltips ── */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    letter-spacing: 0.01em;
+}
+
+[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--brand-dark, #1C1C1C);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+}
+
+/* Color Options */
+.shopnex-color-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.shopnex-color-swatch {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.15s ease;
+    border: 2px solid var(--border, #E8E4DF);
+    padding: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopnex-color-swatch:hover {
+    transform: scale(1.1);
+}
+
+.shopnex-color-swatch.active {
+    box-shadow: 0 0 0 2px var(--bg-primary, #FBF9F6), 0 0 0 4px var(--brand-dark, #1C1C1C);
+    border-color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-color-swatch.oos {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.shopnex-swatch-inner {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.shopnex-color-swatch--light .shopnex-swatch-inner {
+    border: 1px solid var(--border, #E8E4DF);
+}
+
+/* Size Options - Pill shaped */
+.shopnex-size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.shopnex-size-btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1.5px solid var(--border, #E8E4DF);
+    background: transparent;
+    font-size: 13px;
+    font-weight: 450;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--brand-dark, #1C1C1C);
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    letter-spacing: 0.02em;
+}
+
+.shopnex-size-btn:hover {
+    border-color: var(--brand-muted, #9C9792);
+}
+
+.shopnex-size-btn.active {
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+    border-color: var(--brand-dark, #1C1C1C);
+    font-weight: 500;
+}
+
+.shopnex-size-btn.oos {
+    opacity: 0.3;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+/* Size Guide Button */
+.shopnex-size-guide-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--accent, #B8977E);
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: opacity 0.2s ease;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+}
+
+.shopnex-size-guide-btn:hover {
+    opacity: 0.7;
+}
+
+.shopnex-size-guide-btn svg {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* ── Purchase Row ── */
+.shopnex-pdp-purchase {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+/* Quantity Selector - Circular buttons */
+.shopnex-qty-selector {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+}
+
+.shopnex-qty-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border, #E8E4DF);
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-dark, #1C1C1C);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+}
+
+.shopnex-qty-btn:hover {
+    border-color: var(--brand-dark, #1C1C1C);
+    background: var(--bg-secondary, #F3EFEA);
+}
+
+.shopnex-qty-input {
+    width: 48px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    color: var(--brand-dark, #1C1C1C);
+    padding: 0;
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+.shopnex-qty-input::-webkit-inner-spin-button,
+.shopnex-qty-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Add to Cart Button - Pill shaped */
+.shopnex-add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 36px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    gap: 8px;
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+    max-width: 320px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.shopnex-add-to-cart:hover {
+    background: #333;
+    box-shadow: 0 4px 20px rgba(28, 28, 28, 0.06);
+    transform: translateY(-2px);
+}
+
+.shopnex-add-to-cart svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* Wishlist Button - Pill shaped */
+.shopnex-wishlist-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: 1.5px solid var(--border, #E8E4DF);
+    background: transparent;
+    cursor: pointer;
+    color: var(--brand-dark, #1C1C1C);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+    gap: 6px;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    font-size: 14px;
+    font-weight: 450;
+    margin-left: 12px;
+}
+
+.shopnex-wishlist-btn:hover {
+    background: var(--bg-secondary, #F3EFEA);
+    border-color: var(--brand-muted, #9C9792);
+}
+
+.shopnex-wishlist-btn.active svg {
+    color: var(--accent, #B8977E);
+    fill: var(--accent, #B8977E);
+}
+
+.shopnex-wishlist-btn svg {
+    width: 18px;
+    height: 18px;
+    transition: color 0.2s ease;
+}
+
+
+/* ── Product Meta ── */
+.shopnex-product-meta {
+    border-top: 1px solid var(--border-light, #F0EDE9);
+    padding-top: 24px;
+    display: flex;
+    gap: 32px;
+    font-size: 13px;
+    color: var(--brand-muted, #9C9792);
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.shopnex-product-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* ── Trust Signals ── */
+.shopnex-trust-signals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+    padding: 16px;
+    background: var(--bg-white, #FFFFFF);
+    border-radius: 10px;
+    border: 1px solid var(--border-light, #F0EDE9);
+}
+.shopnex-product-meta .shopnex-trust-signals {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 0;
+}
+
+.shopnex-trust-item {
+    text-align: center;
+}
+
+.shopnex-trust-item:not(:last-child) {
+    border-right: 1px solid var(--border-light, #F0EDE9);
+}
+
+.shopnex-trust-item svg {
+    color: var(--accent, #B8977E);
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin: 0 auto 4px;
+}
+
+.shopnex-trust-item p {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--brand-dark, #1C1C1C);
+    margin: 0;
+}
+
+
+/* ── Tabs ── */
+.shopnex-product-tabs {
+    margin: 40px 0;
+    border-top: 1px solid var(--border-light, #F0EDE9);
+}
+
+.shopnex-tab-headers {
+    display: flex;
+    gap: 36px;
+    border-bottom: 1px solid var(--border-light, #F0EDE9);
+    padding: 16px 0;
+}
+
+.shopnex-tab-header {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--brand-muted, #9C9792);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+}
+
+.shopnex-tab-header.active-tab {
+    color: var(--brand-dark, #1C1C1C);
+    border-bottom-color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-product-tabs--single .shopnex-tab-header.active-tab {
+    border-bottom-color: transparent;
+}
+
+.shopnex-product-tabs--single .shopnex-tab-panel {
+    max-width: none;
+}
+
+.shopnex-tab-panel .woocommerce-product-attributes {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    border: none;
+}
+
+.shopnex-tab-panel .woocommerce-product-attributes th,
+.shopnex-tab-panel .woocommerce-product-attributes td {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-light, #F0EDE9);
+    text-align: left;
+    vertical-align: top;
+}
+
+.shopnex-tab-panel .woocommerce-product-attributes tr:last-child th,
+.shopnex-tab-panel .woocommerce-product-attributes tr:last-child td {
+    border-bottom: none;
+}
+
+.shopnex-tab-panel .woocommerce-product-attributes th {
+    width: 200px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+    font-size: 14px;
+}
+
+.shopnex-tab-panel .woocommerce-product-attributes td {
+    color: var(--text-secondary, #6B6560);
+    font-size: 14px;
+}
+
+.shopnex-tab-panel .woocommerce-product-attributes p,
+.shopnex-tab-panel .woocommerce-product-attributes a {
+    margin: 0;
+    color: var(--text-secondary, #6B6560);
+}
+
+.shopnex-tab-header:hover {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-tab-panel {
+    padding: 24px 0;
+    color: var(--text-secondary, #6B6560);
+    font-size: 14px;
+    line-height: 1.8;
+    display: none;
+}
+
+.shopnex-tab-panel.active-panel {
+    display: block;
+}
+
+.shopnex-tab-panel p {
+    margin-bottom: 8px;
+}
+
+.shopnex-tab-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.shopnex-tab-panel strong {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-accordion {
+    border-top: 1px solid var(--border-light, #F0EDE9);
+}
+
+.shopnex-accordion-item {
+    border-bottom: 1px solid var(--border-light, #F0EDE9);
+}
+
+.shopnex-accordion-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    transition: color 0.2s ease;
+}
+
+.shopnex-accordion-trigger:hover {
+    color: var(--accent, #B8977E);
+}
+
+.shopnex-acc-icon {
+    display: inline-flex;
+    align-items: center;
+    color: var(--brand-muted, #9C9792);
+    transition: transform 0.2s ease;
+}
+
+.shopnex-acc-icon svg {
+    display: block;
+}
+
+.shopnex-accordion-item.open .shopnex-acc-icon {
+    transform: rotate(180deg);
+}
+
+.shopnex-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.shopnex-accordion-item.open .shopnex-accordion-content {
+    max-height: 500px;
+}
+
+.shopnex-accordion-text {
+    padding-bottom: 16px;
+    font-size: 14px;
+    color: var(--text-secondary, #6B6560);
+    line-height: 1.8;
+}
+
+.shopnex-accordion-text ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.shopnex-accordion-text li {
+    margin-bottom: 4px;
+}
+
+.shopnex-accordion-text p {
+    margin-bottom: 8px;
+}
+
+.shopnex-accordion-text p:last-child {
+    margin-bottom: 0;
+}
+
+.shopnex-accordion-text strong {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+
+/* ── Variation Price Display ── */
+.shopnex-variation-price {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: 14px 18px;
+    background: var(--bg-white, #FFFFFF);
+    border-radius: 8px;
+    border: 1px solid var(--border-light, #F0EDE9);
+    animation: shopnexFadeInPrice 0.3s ease;
+}
+
+@keyframes shopnexFadeInPrice {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shopnex-variation-price-current {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-variation-price-current ins {
+    text-decoration: none;
+}
+
+.shopnex-variation-price-original {
+    font-size: 14px;
+    color: var(--brand-muted, #9C9792);
+    text-decoration: line-through;
+}
+
+.shopnex-variation-price-save {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-secondary, #C4614E);
+}
+
+
+/* ── Reviews Section ── */
+.shopnex-reviews-section {
+    background: var(--bg-white, #FFFFFF);
+    border-top: 1px solid var(--border-light, #F0EDE9);
+    padding: 48px 0;
+}
+
+
+.shopnex-reviews-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/* Review Summary (Left) */
+.shopnex-reviews-summary {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+.shopnex-reviews-title {
+    font-family: var(--font-display, 'Playfair Display', serif);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--brand-dark, #1C1C1C);
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
+}
+
+.shopnex-reviews-score {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.shopnex-reviews-big-number {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+    line-height: 1;
+}
+
+.shopnex-reviews-out-of {
+    font-size: 14px;
+    color: var(--brand-muted, #9C9792);
+}
+
+.shopnex-reviews-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 4px;
+}
+
+.shopnex-reviews-based-on {
+    font-size: 12px;
+    color: var(--brand-muted, #9C9792);
+    margin-bottom: 24px;
+}
+
+/* Rating Bars */
+.shopnex-rating-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.shopnex-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.shopnex-bar-label {
+    font-size: 12px;
+    color: var(--brand-muted, #9C9792);
+    width: 16px;
+    text-align: right;
+}
+
+.shopnex-bar-track {
+    flex: 1;
+    height: 8px;
+    background: var(--border-light, #F0EDE9);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.shopnex-bar-fill {
+    height: 100%;
+    background: var(--accent, #B8977E);
+    border-radius: 100px;
+    transition: width 1s ease;
+}
+
+.shopnex-bar-count {
+    font-size: 12px;
+    color: var(--brand-muted, #9C9792);
+    width: 32px;
+    text-align: right;
+}
+
+/* Write Review Button */
+.shopnex-write-review-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: 1.5px solid var(--brand-dark, #1C1C1C);
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--brand-dark, #1C1C1C);
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    letter-spacing: 0.04em;
+}
+
+.shopnex-write-review-btn:hover {
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+}
+
+
+/* ── Review Cards (Right) ── */
+.shopnex-reviews-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.shopnex-review-card {
+    background: var(--bg-primary, #FBF9F6);
+    border-radius: 10px;
+    padding: 24px;
+    border: 1px solid var(--border-light, #F0EDE9);
+}
+
+.shopnex-review-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.shopnex-review-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 4px;
+}
+
+.shopnex-review-stars svg {
+    width: 14px;
+    height: 14px;
+}
+
+.shopnex-review-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+    margin: 0;
+}
+
+.shopnex-review-verified {
+    font-size: 10px;
+    font-family: monospace;
+    color: var(--brand-muted, #9C9792);
+    background: var(--bg-secondary, #F3EFEA);
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+}
+
+.shopnex-review-text {
+    font-size: 14px;
+    color: var(--text-secondary, #6B6560);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.shopnex-review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.shopnex-author-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--bg-secondary, #F3EFEA);
+    flex-shrink: 0;
+}
+
+.shopnex-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.shopnex-author-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--brand-dark, #1C1C1C);
+    margin: 0;
+}
+
+.shopnex-author-meta {
+    font-size: 10px;
+    color: var(--brand-muted, #9C9792);
+    margin: 0;
+}
+
+.shopnex-no-reviews {
+    font-size: 14px;
+    color: var(--brand-muted, #9C9792);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Load More Reviews */
+.shopnex-load-more-reviews {
+    display: block;
+    margin: 32px auto 0;
+    padding: 12px 32px;
+    border: 1.5px solid var(--border, #E8E4DF);
+    border-radius: 50px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--brand-dark, #1C1C1C);
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    letter-spacing: 0.04em;
+}
+
+.shopnex-load-more-reviews:hover {
+    border-color: var(--brand-dark, #1C1C1C);
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+}
+
+
+/* ── Review Modal ── */
+.shopnex-review-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopnex-review-modal.active {
+    display: flex;
+}
+
+.shopnex-review-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.shopnex-review-modal-content {
+    position: relative;
+    background: var(--bg-white, #FFFFFF);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 480px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: shopnexModalSlideIn 0.3s ease;
+    margin: 20px;
+}
+
+@keyframes shopnexModalSlideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shopnex-review-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-muted, #9C9792);
+    transition: color 0.2s ease;
+}
+
+.shopnex-review-modal-close:hover {
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-review-modal-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.shopnex-review-modal-header h3 {
+    font-family: var(--font-display, 'Playfair Display', serif);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-review-modal-header p {
+    font-size: 14px;
+    color: var(--brand-muted, #9C9792);
+}
+
+/* Review Form */
+.shopnex-form-group {
+    margin-bottom: 20px;
+}
+
+.shopnex-form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-form-group input,
+.shopnex-form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border, #E8E4DF);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    transition: all 0.2s ease;
+    outline: none;
+    background: transparent;
+    color: var(--brand-dark, #1C1C1C);
+    box-sizing: border-box;
+}
+
+.shopnex-form-group input:focus,
+.shopnex-form-group textarea:focus {
+    border-color: var(--accent, #B8977E);
+    box-shadow: 0 0 0 2px rgba(184, 151, 126, 0.25);
+}
+
+.shopnex-form-group input::placeholder,
+.shopnex-form-group textarea::placeholder {
+    color: var(--brand-muted, #9C9792);
+}
+
+.shopnex-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.shopnex-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Star Rating Input */
+.shopnex-star-rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+
+.shopnex-star-rating-input .star {
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.shopnex-star-rating-input .star:hover,
+.shopnex-star-rating-input .star.active {
+    transform: scale(1.15);
+}
+
+.shopnex-star-rating-input .star svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+    color: var(--border, #E8E4DF);
+    transition: color 0.15s ease;
+}
+
+.shopnex-star-rating-input .star.active svg {
+    color: var(--accent, #B8977E);
+}
+
+.shopnex-submit-review {
+    width: 100%;
+    padding: 16px;
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-top: 8px;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    letter-spacing: 0.04em;
+}
+
+.shopnex-submit-review:hover {
+    background: #333;
+}
+
+.shopnex-submit-review:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+@keyframes shopnex-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+/* ── Related Products Section ── */
+.shopnex-related-section {
+    background: var(--bg-primary, #FBF9F6);
+    border-top: 1px solid var(--border-light, #F0EDE9);
+    padding: 40px 0;
+}
+
+
+.shopnex-related-title {
+    font-family: var(--font-display, 'Playfair Display', serif);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--brand-dark, #1C1C1C);
+    letter-spacing: -0.015em;
+    margin-bottom: 24px;
+}
+
+.shopnex-related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* Related Product Card */
+.shopnex-related-card {
+    position: relative;
+    background: var(--bg-white, #FFFFFF);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    text-decoration: none;
+}
+
+.shopnex-related-card:hover {
+    box-shadow: 0 12px 40px rgba(28, 28, 28, 0.08);
+    transform: translateY(-4px);
+}
+
+.shopnex-related-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+}
+
+.shopnex-related-badge.shopnex-badge-sale {
+    background: var(--brand-secondary, #C4614E);
+    color: #fff;
+}
+
+.shopnex-related-badge.shopnex-badge-new {
+    background: var(--brand-highlight, #FBE7C6);
+    color: var(--brand-dark, #1C1C1C);
+}
+
+.shopnex-related-img {
+    display: block;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: var(--bg-secondary, #F3EFEA);
+}
+
+.shopnex-related-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.shopnex-related-card:hover .shopnex-related-img img {
+    transform: scale(1.04);
+}
+
+.shopnex-related-info {
+    padding: 14px 16px;
+}
+
+.shopnex-related-brand {
+    font-size: 10px;
+    color: var(--brand-muted, #9C9792);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+}
+
+.shopnex-related-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--brand-dark, #1C1C1C);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.shopnex-related-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-dark, #1C1C1C);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.shopnex-related-price del {
+    font-size: 12px;
+    color: var(--brand-muted, #9C9792);
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.shopnex-related-price ins {
+    text-decoration: none;
+}
+
+.shopnex-related-colors {
+    display: flex;
+    gap: 4px;
+}
+
+.shopnex-color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--border, #E8E4DF);
+}
+
+
+/* ── Lightbox ── */
+.shopnex-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopnex-lightbox.active {
+    display: flex;
+}
+
+.shopnex-lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    transition: background 0.2s ease;
+}
+
+.shopnex-lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.shopnex-lightbox img {
+    max-width: 80vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+
+/* ── Scroll Top Button ── */
+.shopnex-scroll-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background: var(--brand-dark, #1C1C1C);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 999;
+    border: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.shopnex-scroll-top.visible {
+    opacity: 0.8;
+    pointer-events: auto;
+}
+
+.shopnex-scroll-top:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.shopnex-scroll-top svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ── WooCommerce Overrides ── */
+.single-product .woocommerce-product-gallery {
+    display: none !important;
+}
+
+.single-product .summary {
+    display: none !important;
+}
+
+.single-product .woocommerce-tabs {
+    display: none !important;
+}
+
+.single-product div.product .woocommerce-breadcrumb {
+    display: none;
+}
+
+.single-product div.product .product_title {
+    display: none;
+}
+
+.single-product div.product .price {
+    display: none;
+}
+
+.single-product .woocommerce-message,
+.single-product .woocommerce-info,
+.single-product .woocommerce-error {
+    margin-bottom: 24px;
+}
+
+.single-product .woocommerce-message::before,
+.single-product .woocommerce-info::before,
+.single-product .woocommerce-error::before {
+    display: none;
+}
+
+
+/* ── Responsive ── */
+
+
+/**
+====================================================================
+  Responsive Styles
+====================================================================
+*/
+
+@media (min-width: 1024px) {
+    .shopnex-container {
+        padding: 0 32px;
+    }
+
+    .shopnex-pdp-container {
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    .shopnex-pdp-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .shopnex-reviews-section {
+        padding: 64px 0;
+    }
+
+    .shopnex-reviews-grid {
+        flex-direction: row;
+        gap: 64px;
+        align-items: flex-start;
+    }
+
+    .shopnex-reviews-summary {
+        width: 288px;
+        position: sticky;
+        top: 96px;
+    }
+
+    .shopnex-related-section {
+        padding: 40px 0;
+    }
+
+    .shopnex-related-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .shopnex-container {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .shopnex-pdp-grid {
+        gap: 40px;
+    }
+
+    .shopnex-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .shopnex-pdp-grid {
+        gap: 30px;
+    }
+
+    .shopnex-pdp-title {
+        font-size: 28px;
+    }
+
+    .shopnex-pdp-purchase {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shopnex-add-to-cart {
+        max-width: 100%;
+    }
+
+    .shopnex-wishlist-btn {
+        margin-left: 0;
+    }
+
+    .shopnex-reviews-grid {
+        flex-direction: column;
+    }
+
+    .shopnex-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .shopnex-related-name {
+        font-size: 12px;
+    }
+
+    .shopnex-related-price {
+        font-size: 12px;
+    }
+
+    .shopnex-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .shopnex-product-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .shopnex-tab-headers {
+        gap: 20px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .shopnex-tab-headers::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .shopnex-related-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,24 @@
+/**
+ * Shopnex Pro Upsell - Customizer Controls CSS
+ *
+ * Styles for the "Upgrade to Pro" section displayed at the top
+ * of the WordPress Customizer sidebar.
+ *
+ * @package shopnex
+ */
+
+#customize-controls .control-section-shopnex-pro .accordion-section-title:hover,
+#customize-controls .control-section-shopnex-pro .accordion-section-title:focus {
+	background-color: #fff;
+}
+
+.control-section-shopnex-pro .accordion-section-title .button {
+	margin-top: -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.rtl .control-section-shopnex-pro .accordion-section-title .button {
+	margin-left: 0;
+	margin-right: 8px;
+}

@@ -1,0 +1,36 @@
+/*
+Theme Name: Casual Fashion Store
+Theme URI: https://thethemenook.com/free-themes/casual-fashion/
+Author: The Theme Nook
+Author URI: https://thethemenook.com/
+Description: Casual Fashion Store is a WooCommerce fashion store and WordPress block theme for online clothing stores, casual fashion boutiques, apparel shops, and lifestyle brands selling tees, hoodies, denim, knitwear, basics, accessories, and relaxed everyday outfits. Designed for youth fashion, street-casual brands, campus style shops, and modern womenswear stores, Casual Fashion Store combines clean product sections, soft editorial imagery, collection-focused layouts, and a simple shopping experience built for eCommerce. It is ideal for showcasing new arrivals, trending products, seasonal sales, casual capsule wardrobes, and comfortable everyday clothing. Built for the WordPress Site Editor, the theme includes flexible templates, block patterns, WooCommerce support, and no-code customization for creating a polished online store. Casual Fashion Store requires the Fashion Nook parent theme and inherits its full site editing support, WooCommerce templates, block theme framework, and WordPress Site Editor compatibility.
+Requires at least: 6.9
+Tested up to: 7.0
+Requires PHP: 5.7
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: fashion-nook
+Text Domain: casual-fashion-store
+Tags: block-patterns, block-styles, custom-logo, e-commerce, editor-style, featured-images, full-site-editing, full-width-template, grid-layout, one-column, style-variations, template-editing, threaded-comments, translation-ready, wide-blocks
+*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: .2em;
+}
+
+.wp-block-woocommerce-product-button .wp-block-button__link,
+.wc-block-components-product-button .wp-block-button__link,
+.wc-block-components-product-button__button,
+.wp-block-woocommerce-product-button .wp-element-button,
+.wc-block-components-product-button .wp-element-button,
+.wp-block-woocommerce-add-to-cart-with-options .wp-element-button,
+.wc-block-add-to-cart-form .wp-element-button {
+	border: 1px solid currentColor !important;
+	border-radius: 4px !important;
+}
