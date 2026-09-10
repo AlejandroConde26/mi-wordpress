@@ -14,7 +14,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( "Shop now", "casual-fashion-store" ); ?></a></p>
+<p><a href="/shop/"><?php esc_html_e( "Shop now", "casual-fashion-store" ); ?></a></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
@@ -26,7 +26,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( "Shop now", "casual-fashion-store" ); ?></a></p>
+<p><a href="/shop/"><?php esc_html_e( "Shop now", "casual-fashion-store" ); ?></a></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column --></div>
